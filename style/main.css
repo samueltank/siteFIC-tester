@@ -13,19 +13,19 @@ main {
   align-items: center;
   justify-content: space-evenly;
   padding: 100px 0 0 0;
-  background: linear-gradient(180deg, #000000 0.05%, #007BB8 82.59%);
+  background: linear-gradient(180deg, #000000 0.05%, #007bb8 82.59%);
 }
 
 .secIntro > img {
-  width: 30%;
+  width: 37%;
   z-index: 2;
 }
 
 .backImage > img {
   position: absolute;
   z-index: 1;
-  width: 15vw;
-  left: 85%;
+  width: 20vw;
+  left: 80%;
   top: 50%;
 }
 
@@ -42,24 +42,46 @@ main {
 
 .textInitial {
   font-weight: bold;
-  color: #FF2D2D;
+  color: #ff2d2d;
 }
 
 .textCont {
   font-weight: bold;
-  color: #FF2B58;
+  color: #ff2b58;
 }
+
+.mapBox {
+  height: 100vh;
+  width: 100vw;
+}
+
+.trilhas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 10px;
+  background-color: #007bb8;
+}
+
+.trilhas > .imgBox > .trilhaImage {
+  width: 75vw;
+}  
+
 
 /* Divisor criado por shapeDividers */
 
-.divisor{
-  overflow:hidden;
-  position:relative;
+.divisor {
+  overflow: hidden;
+  position: relative;
   width: 100vw;
   height: 100px;
 }
-.divisor::before{
-  content:'';
+.divisor::before {
+  content: "";
   position: absolute;
   bottom: -1px;
   left: -1px;
@@ -67,33 +89,31 @@ main {
   top: -1px;
   z-index: 0;
   pointer-events: none;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: 100% 30px;
-  background-position: 50% 0%;    
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 2" preserveAspectRatio="none"><path d="M0 0q5 4 10 0z" fill="%23007bb8"/></svg>'); 
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 2" preserveAspectRatio="none"><path d="M0 0q5 4 10 0z" fill="%23007bb8"/></svg>');
 }
-  
-@media (min-width:768px){
-  .divisor::before{
-  background-size: 130% 100px;
-  background-position: 50% 0%;   
-  }  
-}
-   
-@media (min-width:1025px){
-  .divisor::before{ 
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw; 
-  background-size: 112% 100px;
-  background-position: 50% 0%;  
+
+@media (min-width: 768px) {
+  .divisor::before {
+    background-size: 130% 100px;
+    background-position: 50% 0%;
   }
 }
-@media (min-width:2100px){
-  .divisor::before{
-  background-size: 112% calc(2vw + 100px);
+
+@media (min-width: 1025px) {
+  .divisor::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 112% 100px;
+    background-position: 50% 0%;
   }
 }
-   
-   
+@media (min-width: 2100px) {
+  .divisor::before {
+    background-size: 112% calc(2vw + 100px);
+  }
+}
