@@ -1,5 +1,5 @@
 footer {
-  height: 25vh;
+  height: 15vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -11,9 +11,10 @@ footer {
   background-size: cover;
 }
 
-
-footer > .infoSENAI > p, footer > .copy > p {
-  font-size: clamp(1rem, 1.2rem, 1.5rem);
+footer > .infoSENAI > p,
+footer > .infoSENAI > p ~ address,
+footer > .copyright > p {
+  font-size: clamp(0.8rem, 1rem, 1.5rem);
   color: whitesmoke;
   text-align: center;
 }
@@ -27,7 +28,7 @@ footer > .infoSENAI {
   justify-content: flex-end;
 }
 
-footer > .copy {
+footer > .copyright {
   height: 100%;
   width: 100%;
   display: flex;
