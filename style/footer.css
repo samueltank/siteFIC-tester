@@ -11,15 +11,15 @@ footer {
   background-size: cover;
 }
 
-footer > .infoSENAI > p,
-footer > .infoSENAI > p ~ address,
-footer > .copyright > p {
+footer>.infoSENAI>p,
+footer>.infoSENAI>p~address,
+footer>.copyright>p {
   font-size: clamp(0.8rem, 1rem, 1.5rem);
   color: whitesmoke;
   text-align: center;
 }
 
-footer > .infoSENAI {
+footer>.infoSENAI {
   height: 100%;
   width: 100%;
   display: flex;
@@ -28,7 +28,7 @@ footer > .infoSENAI {
   justify-content: flex-end;
 }
 
-footer > .copyright {
+footer>.copyright {
   height: 100%;
   width: 100%;
   display: flex;

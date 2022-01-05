@@ -24,7 +24,7 @@ header {
   justify-content: center;
 }
 
-.logoBox > a > img {
+.logoBox>a>img {
   width: 200px;
 }
 
@@ -43,11 +43,11 @@ header {
   gap: 10px;
 }
 
-.menuBar > li {
+.menuBar>li {
   list-style: none;
 }
 
-.menuBar > li > a {
+.menuBar>li>a {
   text-decoration: none;
   color: #002955;
   display: flex;
@@ -62,7 +62,7 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-.menuBar > li > a:hover {
+.menuBar>li>a:hover {
   color: #ffffff;
   background-color: red;
   transition: all 0.2s ease-in-out;
@@ -106,15 +106,15 @@ header {
     transition: all 0.4s ease-in-out;
   }
 
-  .menuBar li > a {
+  .menuBar li>a {
     margin: 0;
     padding: 0;
     width: 100vw;
     border-radius: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0.349);
-  } 
+  }
 
-  #nav.active > .menuBar {
+  #nav.active>.menuBar {
     /* display: flex !important; */
     height: calc(100vh - 80px);
     visibility: visible;
@@ -126,10 +126,11 @@ header {
     border-top: 3px solid;
   }
 
-  #burguer::after, #burguer::before {
+  #burguer::after,
+  #burguer::before {
     position: relative;
     height: 3px;
-    width:20px;
+    width: 20px;
     display: block;
     content: '';
     margin-top: 5px;

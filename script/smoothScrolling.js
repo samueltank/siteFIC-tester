@@ -1,11 +1,11 @@
 const navItems = document.querySelectorAll('.menuBar a[href^="#"]');
 
 navItems.forEach((item) => {
-  item.addEventListener('click', scrollToID);
+  item.addEventListener("click", scrollToID);
 });
 
 function getAttributeByHref(element) {
-  const id = element.getAttribute('href');
+  const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
 }
 
@@ -13,7 +13,7 @@ function scrollToID(event) {
   event.preventDefault();
   const eventTarget = event.target;
   const sectionTo = getAttributeByHref(eventTarget) - 150;
-  
+
   scrollToSection(sectionTo);
 }
 
@@ -27,19 +27,20 @@ function scrollToSection(section) {
  * @param {int} endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
- function smoothScrollTo(endX, endY, duration) {
+function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
   const distanceX = endX - startX;
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== 'undefined' ? duration : 400;
+  duration = typeof duration !== "undefined" ? duration : 400;
 
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
-    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    if ((time /= duration / 2) < 1)
+      return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
   };
 
   const timer = setInterval(() => {
@@ -51,4 +52,4 @@ function scrollToSection(section) {
     }
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
-};
+}

@@ -17,12 +17,12 @@ main {
   background: linear-gradient(180deg, #000000 0.05%, #007bb8 82.59%);
 }
 
-.secIntro > img {
+.secIntro>img {
   width: calc(200px + 25vw);
   z-index: 2;
 }
 
-.backImage > img {
+.backImage>img {
   position: absolute;
   z-index: 1;
   width: 20vw;
@@ -69,7 +69,7 @@ main {
   margin-top: 200px;
 }
 
-.about > .boxTitleAbout {
+.about>.boxTitleAbout {
   height: 130px;
   width: calc(200px + 20vw);
   position: absolute;
@@ -86,7 +86,7 @@ main {
   z-index: 1;
 }
 
-.about > .pointEffect {
+.about>.pointEffect {
   position: absolute;
   top: -155px;
   bottom: -1px;
@@ -94,11 +94,11 @@ main {
   right: -1px;
 }
 
-.about > .containerFlexAbout > .imgAbout > img {
+.about>.containerFlexAbout>.imgAbout>img {
   width: calc(150px + 15vw);
 }
 
-.about > .containerFlexAbout {
+.about>.containerFlexAbout {
   height: 100%;
   width: 100%;
   display: flex;
@@ -110,7 +110,7 @@ main {
   color: #0a153a;
 }
 
-.about > .containerFlexAbout > .textContentAbout {
+.about>.containerFlexAbout>.textContentAbout {
   height: auto;
   width: auto;
   padding-left: 2%;
@@ -128,7 +128,7 @@ main {
   background-color: #ffffff;
 }
 
-.why > .boxTitlePorQueSENAI {
+.why>.boxTitlePorQueSENAI {
   height: 130px;
   width: calc(200px + 20vw);
   position: absolute;
@@ -145,7 +145,7 @@ main {
   text-align: center;
 }
 
-.why > .cards {
+.why>.cards {
   min-height: 60vh;
   width: 100vw;
   display: flex;
@@ -158,7 +158,7 @@ main {
   background-color: #ffffff;
 }
 
-.why > .cards > .card {
+.why>.cards>.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,20 +174,20 @@ main {
   transition: box-shadow 0.3s linear;
 }
 
-.why > .cards > .card img {
+.why>.cards>.card img {
   width: 50%;
 }
 
-.why > .cards > .card:hover {
+.why>.cards>.card:hover {
   box-shadow: none;
 }
 
-.why > .cards > .card > .titleCard {
+.why>.cards>.card>.titleCard {
   color: #001066;
   font-size: clamp(1rem, 1.4rem, 1.6rem);
 }
 
-.why > .cards > .card > .contentCard {
+.why>.cards>.card>.contentCard {
   color: black;
 }
 
@@ -206,7 +206,7 @@ main {
   background-color: cornflowerblue;
 }
 
-.infoCurses > .boxTitleCurses {
+.infoCurses>.boxTitleCurses {
   height: 130px;
   width: calc(200px + 20vw);
   position: absolute;
@@ -222,7 +222,7 @@ main {
   border: 10px solid #ffffff;
 }
 
-.infoCurses > .infoContainerFlex {
+.infoCurses>.infoContainerFlex {
   min-height: 50vh;
   height: auto;
   width: 100vw;
@@ -232,7 +232,7 @@ main {
   background-color: #001066;
 }
 
-.infoCurses > .infoContainerFlex > .infoCursesBlock {
+.infoCurses>.infoContainerFlex>.infoCursesBlock {
   color: white;
   font-size: clamp(1rem, 1.5rem, 2rem);
   padding: 50px;
@@ -240,7 +240,7 @@ main {
   border-left: 10px solid #FF3131;
 }
 
-.infoCurses > .infoContainerFlex > .infoCursesBlock > strong {
+.infoCurses>.infoContainerFlex>.infoCursesBlock>strong {
   color: orangered;
 }
 
@@ -258,7 +258,7 @@ main {
   border-bottom: 1px solid #001066;
 }
 
-.categCurses > .boxTitleCurses {
+.categCurses>.boxTitleCurses {
   height: 130px;
   width: calc(200px + 20vw);
   position: absolute;
@@ -274,15 +274,15 @@ main {
   border: 10px solid #ffffff;
 }
 
-.categCurses > .cardsCatFlexContainer {
+.categCurses>.cardsCatFlexContainer {
   min-height: 90vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
- 
-.categCurses > .cardsCatFlexContainer > .categoInCards {
+
+.categCurses>.cardsCatFlexContainer>.categoInCards {
   min-height: 60vh;
   width: 70vw;
   display: flex;
@@ -296,7 +296,7 @@ main {
   /* background-color: #009e4a; */
 }
 
-.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat {
+.categCurses>.cardsCatFlexContainer>.categoInCards>.cardsCat {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -310,47 +310,58 @@ main {
 }
 
 .cardCat1 {
-  background-color:#6897F2;
+  background-color: #6897F2;
 }
+
 .cardCat2 {
   background-color: #B881C1;
 }
+
 .cardCat3 {
   background-color: #8C7E9A;
 }
+
 .cardCat4 {
   background-color: #70B6B2;
 }
+
 .cardCat5 {
   background-color: #D26A6A;
 }
+
 .cardCat6 {
   background-color: #4B5796;
 }
+
 .cardCat7 {
   background-color: #9EBAF0;
 }
+
 .cardCat8 {
   background-color: #0E6C79;
 }
+
 .cardCat9 {
   background-color: #6B8566;
 }
+
 .cardCat10 {
   background-color: #009e4a;
 }
+
 .cardCat11 {
   background-color: #BA9FF4;
 }
+
 .cardCat12 {
   background-color: #4D4B4F;
 }
 
-.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat:hover {
+.categCurses>.cardsCatFlexContainer>.categoInCards>.cardsCat:hover {
   opacity: 0.95;
 }
 
-.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat > a {
+.categCurses>.cardsCatFlexContainer>.categoInCards>.cardsCat>a {
   width: 100%;
   height: 100%;
 }
@@ -368,7 +379,7 @@ main {
   z-index: -2;
 }
 
-.trilhas > .backTrilha {
+.trilhas>.backTrilha {
   position: absolute;
   height: 200px;
   width: 100vw;
@@ -377,7 +388,7 @@ main {
   z-index: -1;
 }
 
-.trilhas > .imgBox > .trilhaImage {
+.trilhas>.imgBox>.trilhaImage {
   z-index: 0;
   width: 50vw;
 }
@@ -389,6 +400,7 @@ main {
   width: 100vw;
   height: 100px;
 }
+
 .divisor::before {
   content: "";
   position: absolute;
@@ -421,12 +433,13 @@ main {
     background-position: 50% 0%;
   }
 }
+
 @media (min-width: 2100px) {
   .divisor::before {
     background-size: 112% calc(2vw + 100px);
   }
 
-  .categCurses > .waves > img {
+  .categCurses>.waves>img {
     display: none;
   }
 }
@@ -439,27 +452,27 @@ main {
 
   .imgAbout {
     display: none;
-  }  
+  }
 
-  .why > .cards {
+  .why>.cards {
     position: relative;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-  }  
+  }
 
-  .backImage > img {
+  .backImage>img {
     left: 71%;
     top: 30%;
     width: 30%;
   }
 
-  .why > .boxTitlePorQueSENAI {
+  .why>.boxTitlePorQueSENAI {
     z-index: 2;
   }
 
-  .why > .cards > .card {
+  .why>.cards>.card {
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -470,15 +483,15 @@ main {
     z-index: 2;
   }
 
-  .why > .cards > .card > .titleCard {
+  .why>.cards>.card>.titleCard {
     font-size: 1rem;
   }
 
-  .why > .cards > .card > .contentCard {
+  .why>.cards>.card>.contentCard {
     font-size: 0.7rem;
   }
 
-  .why > .cards > .card img {
+  .why>.cards>.card img {
     width: 30%;
   }
 
@@ -490,19 +503,19 @@ main {
     text-align: center;
   }
 
-  .about > .containerFlexAbout > .textContentAbout {
+  .about>.containerFlexAbout>.textContentAbout {
     padding: 150px 30px 150px 30px;
     font-size: 1rem;
   }
 
-  .infoCurses > .infoContainerFlex > .infoCursesBlock {
+  .infoCurses>.infoContainerFlex>.infoCursesBlock {
     font-size: 1rem;
     margin: 150px 5% 150px 10%;
     padding: 10px;
     border-left: 5px solid #FF3131;
   }
 
-  #trilhas > .imgBox img {
+  #trilhas>.imgBox img {
     width: 90vw;
   }
 
@@ -544,35 +557,35 @@ main {
     right: -1px;
   }
 
-  .categCurses > .cardsCatFlexContainer > .categoInCards {
+  .categCurses>.cardsCatFlexContainer>.categoInCards {
     width: 100vw;
   }
 
-  .categCurses > .cardsCatFlexContainer > .categoInCards > .cardsCat {
+  .categCurses>.cardsCatFlexContainer>.categoInCards>.cardsCat {
     min-width: 200px;
     min-height: 50px;
     font-size: 0.8rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
-  .about > .containerFlexAbout {
+@media (min-width: 768px) and (max-width: 992px) {
+  .about>.containerFlexAbout {
     padding: 160px 0 160px 0;
     gap: 10px;
   }
 
-  .why > .cards {
+  .why>.cards {
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-  } 
+  }
 
-  .why > .boxTitlePorQueSENAI {
+  .why>.boxTitlePorQueSENAI {
     z-index: 2;
   }
 
-  .why > .cards > .card {
+  .why>.cards>.card {
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -582,27 +595,27 @@ main {
     z-index: 2;
   }
 
-  .why > .cards > .card img {
+  .why>.cards>.card img {
     width: 30%;
   }
 
-  .why > .cards > .card > .titleCard {
+  .why>.cards>.card>.titleCard {
     font-size: 1.3rem;
   }
 
-  .why > .cards > .card > .contentCard {
+  .why>.cards>.card>.contentCard {
     font-size: 1rem;
   }
 
-  .categCurses > .cardsCatFlexContainer > .categoInCards {
+  .categCurses>.cardsCatFlexContainer>.categoInCards {
     width: 100vw;
   }
 
-  #trilhas > .imgBox img {
+  #trilhas>.imgBox img {
     width: 90vw;
   }
 
-  .categCurses > .cardsCatFlexContainer > .categoInCards > .cardsCat {
+  .categCurses>.cardsCatFlexContainer>.categoInCards>.cardsCat {
     min-width: 300px;
     min-height: 100px;
     font-size: 1rem;
